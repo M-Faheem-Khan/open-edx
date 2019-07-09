@@ -1,0 +1,12 @@
+{
+    "about": {
+        "name": "Settings Wrapper",
+        "file": "settings_wrapper_config.json",
+        "version": "1.0.0"
+    },
+    "defaults": {
+        "root_configs": "/opt/bitnami/apps/edx/conf/",
+        "lms_config": "/opt/bitnami/apps/edx/conf/lms.env.json",
+        "cms_config": "/opt/bitnami/apps/edx/conf/cms.env.json"
+    }
+}
