@@ -40,3 +40,7 @@ https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
 
 - Always restart your server after re-compiling your assets
 
+### Useful Links
+https://docs.bitnami.com/general/apps/edx/
+https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/19662636/How-to+articles
+https://blog.lawrencemcdaniel.com/?s=open+edx
