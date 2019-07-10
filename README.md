@@ -41,6 +41,9 @@ To setup open edx with your configs you need to edit both*(if you are going to b
 
 - Always restart your server after re-compiling your assets
 
+# Connecting to your SMTP server
+https://docs.bitnami.com/installer/apps/edx/configuration/configure-smtp/
+
 ### Useful Links
 https://docs.bitnami.com/general/apps/edx/
 https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/19662636/How-to+articles
