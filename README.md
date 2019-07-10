@@ -1,5 +1,7 @@
 # open-edx
-documentation other helper tools for changing/ editing open-edx configs
+Documentation and other helper tools for changing/ editing open-edx configs + themes
+
+If you have knowledge of Django it should be very easy for you to understand and edit this.
 
 # Getting Started
 Before you  start make sure you have your vm instance up and running
@@ -24,8 +26,7 @@ To setup open edx with your configs you need to edit both*(if you are going to b
   *.auth.json files contains db and other connection credentials and might need to change/edit them
   httpd-*.conf files contains rules for the server to allow which files/folders should be accessible
     
-# For themes
-https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
+# Compiling Your Assets and Restarting your server
   - If you enabled the custom theme for LMS, update LMS assets:
     - `sudo /opt/bitnami/apps/edx/bin/edxapp-update-assets-lms`
   
@@ -44,3 +45,4 @@ https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
 https://docs.bitnami.com/general/apps/edx/
 https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/19662636/How-to+articles
 https://blog.lawrencemcdaniel.com/?s=open+edx
+https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
