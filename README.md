@@ -43,9 +43,23 @@ To setup open edx with your configs you need to edit both*(if you are going to b
 
 # Connecting to your SMTP server
 https://docs.bitnami.com/installer/apps/edx/configuration/configure-smtp/
+You will need to edit *.env.json & *.auth.json. Both lms and cms environment and cms files are virtually the same. So any changes you make lms you will need to make to cms unless you are not using the cms portion of open-edx.
+- In your lms.auth.json & cms.auth.json files you will need to look for:
+  - `EMAIL_HOST_PASSWORD` set it equal to your smtp client password
+  - `EMAIL_HOST_USER` set it equal to your smtp client email/user  
+- In your lms.auth.json & cms.auth.json files you will need to look for:
+  - `EMAIL_HOST` set it equal to your smtp server url (example: smtp.google.com)
+  - `EMAIL_PORT` set it equal to your smtp server port it should be 587 or 465 unless otherwise
+  - `DEFAULT_FROM_EMAIL` set it equal to your outgoing email (example: no-reply@example.com)
 
-### Useful Links
+- For changes to take place your would need to restart both apache and edx:
+  - Restarting Apache -> `sudo /opt/bitnami/ctlscript.sh restart apache`
+  - Restarting Edx -> `sudo /opt/bitnami/ctlscript.sh restart edx`
+  
+
+### Links
 https://docs.bitnami.com/general/apps/edx/
 https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/19662636/How-to+articles
 https://blog.lawrencemcdaniel.com/?s=open+edx
+https://docs.bitnami.com/installer/apps/edx/configuration/configure-smtp/
 https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
