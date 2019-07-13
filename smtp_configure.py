@@ -10,10 +10,6 @@ import os
 import sys
 import json
 
-# check if the program is running as root
-# show the default path containging the configuration files 
-# make sure that there are 
-
 conf_dir  = "/opt/bitnami/apps/edx/conf/" # directory containing all the config files
 
 def checkRootStatus():
