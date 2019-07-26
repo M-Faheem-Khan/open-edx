@@ -59,9 +59,13 @@ You will need to edit *.env.json & *.auth.json. Both lms and cms environment and
 
 ## Delete a course
   - cd apps/edx/edx-platform
-  - sudo -u bitnami ../bin/python.edxapp ./manage.py lms dump_course_ids --settings aws
-  - sudo -u bitnami ../bin/python.edxapp ./manage.py cms --settings=aws delete_course COURSE_ID
-  
+  - `sudo -u bitnami ../bin/python.edxapp ./manage.py lms dump_course_ids --settings aws`
+  - `sudo -u bitnami ../bin/python.edxapp ./manage.py cms --settings=aws delete_course COURSE_ID`
+
+
+## Printing your lms settings
+  - `cd /opt/bitnami/apps/edx/edx-platform/`
+  - `sudo -u www-data ../bin/python.edxapp ./manage.py lms --settings production help`
   
 ### Links
 https://docs.bitnami.com/general/apps/edx/
@@ -70,3 +74,4 @@ https://blog.lawrencemcdaniel.com/?s=open+edx
 https://docs.bitnami.com/installer/apps/edx/configuration/configure-smtp/
 https://docs.bitnami.com/general/apps/edx/configuration/install-theme/
 https://openedx.atlassian.net/wiki/spaces/OXA/pages/158194136/How+to+delete+a+course
+https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/60227913/Managing+OpenEdX+Tips+and+Tricks
